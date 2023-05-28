@@ -147,7 +147,7 @@
 	</array>
 	<key>readme</key>
 	<string># Usage
-Translate words or sentences to another language with Google Translate via the `t` keyword.
+Translate words or sentences to another language via the `t` keyword.
 ![preview](images/preview.png)
 ![preview2](images/preview2.png)
 ↩: Copy translate to the clipboard.  
@@ -303,8 +303,6 @@ By default, translate any language to Russian, setup your language in the **work
 			<string>input_language</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>0.1.0</string>
 	<key>webaddress</key>

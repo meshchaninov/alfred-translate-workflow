@@ -9,9 +9,9 @@ import sys
 import os
 
 
-class GoogleTranslate:
+class Translate:
     """
-    Google Translate API
+    Translate API
     Thanks to Telegram MacOS client for the idea
 
     https://github.com/TelegramOrg/Telegram-macos-Swift/blob/67e4cf8de2f060ec8152ce68562c9489a6073534/packages/Translate/Sources/Translate/Translate.swift
@@ -97,10 +97,10 @@ if __name__ == "__main__":
     out_lang = os.environ["output_language"]
     in_lang = os.environ["input_language"]
 
-    recognised_lang, translate = GoogleTranslate(
+    recognised_lang, translate = Translate(
         out_lang).get_translation(' '.join(text_list))
     if recognised_lang == out_lang:
-        _, translate = GoogleTranslate(
+        _, translate = Translate(
             in_lang).get_translation(' '.join(text_list))
 
     print(generate_worflow_output(translate))
