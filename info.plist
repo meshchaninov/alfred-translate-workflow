@@ -303,6 +303,8 @@ By default, translate any language to Russian, setup your language in the **work
 			<string>input_language</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>0.1.0</string>
 	<key>webaddress</key>
