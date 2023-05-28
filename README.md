@@ -1,4 +1,4 @@
-# Alfred workflow to translate languages
+# Alfred workflow to translate texts
 ## Usage
 Translate words or sentences to another language with Google Translate via the `t` keyword.
 ![preview](images/preview.png)
