@@ -20,6 +20,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3FBBE375-C914-4AC3-9A98-31E268F25295</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>D2D5C5DA-1EAE-4512-B453-DEB6657BA96B</key>
 		<array>
@@ -86,27 +96,27 @@
 				<key>argumenttreatemptyqueryasnil</key>
 				<true/>
 				<key>argumenttrimmode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>t</string>
+				<string>{var:keyword}</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>queuemode</key>
 				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Translating text...</string>
 				<key>script</key>
-				<string>python3 ./main.py "{query}"</string>
+				<string>python3 ./main.py $@</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
@@ -144,6 +154,25 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>3FBBE375-C914-4AC3-9A98-31E268F25295</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string># Usage
@@ -151,29 +180,37 @@ Translate words or sentences to another language via the `t` keyword.
 ![preview](images/preview.png)
 ![preview2](images/preview2.png)
 ↩: Copy translate to the clipboard.  
+↩ + ⇧: Paste translate to active app.
 By default, translate any language to Russian, setup your language in the **workflow settings**.</string>
 	<key>uidata</key>
 	<dict>
 		<key>106F3E8A-2E39-4271-926D-A914AB923F97</key>
 		<dict>
 			<key>xpos</key>
-			<real>285</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>170</real>
+			<real>210</real>
+		</dict>
+		<key>3FBBE375-C914-4AC3-9A98-31E268F25295</key>
+		<dict>
+			<key>xpos</key>
+			<real>550</real>
+			<key>ypos</key>
+			<real>360</real>
 		</dict>
 		<key>651FC5D3-99B6-45E2-A896-01E2A7D3393C</key>
 		<dict>
 			<key>xpos</key>
-			<real>535</real>
+			<real>550</real>
 			<key>ypos</key>
-			<real>180</real>
+			<real>220</real>
 		</dict>
 		<key>D2D5C5DA-1EAE-4512-B453-DEB6657BA96B</key>
 		<dict>
 			<key>xpos</key>
-			<real>50</real>
+			<real>60</real>
 			<key>ypos</key>
-			<real>160</real>
+			<real>195</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -302,9 +339,30 @@ By default, translate any language to Russian, setup your language in the **work
 			<key>variable</key>
 			<string>input_language</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>t</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Keyword that activates the workspace</string>
+			<key>label</key>
+			<string>Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>keyword</string>
+		</dict>
 	</array>
 	<key>version</key>
-	<string>0.1.0</string>
+	<string>0.2.0</string>
 	<key>webaddress</key>
 	<string>https://nikitadev.dev</string>
 </dict>
