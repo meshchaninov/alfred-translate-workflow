@@ -58,6 +58,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>651FC5D3-99B6-45E2-A896-01E2A7D3393C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -114,7 +133,7 @@
 				<key>runningsubtext</key>
 				<string>Translating text...</string>
 				<key>script</key>
-				<string>python3 ./main.py $@</string>
+				<string>python3 ./main.py $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -132,25 +151,6 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>106F3E8A-2E39-4271-926D-A914AB923F97</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>651FC5D3-99B6-45E2-A896-01E2A7D3393C</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -180,7 +180,7 @@ Translate words or sentences to another language via the `t` keyword.
 ![preview](images/preview.png)
 ![preview2](images/preview2.png)
 ↩: Copy translate to the clipboard.  
-↩ + ⇧: Paste translate to active app.
+⇧ + ↩: Paste translate to active app.
 By default, translate any language to Russian, setup your language in the **workflow settings**.</string>
 	<key>uidata</key>
 	<dict>
@@ -201,9 +201,9 @@ By default, translate any language to Russian, setup your language in the **work
 		<key>651FC5D3-99B6-45E2-A896-01E2A7D3393C</key>
 		<dict>
 			<key>xpos</key>
-			<real>550</real>
+			<real>525</real>
 			<key>ypos</key>
-			<real>220</real>
+			<real>95</real>
 		</dict>
 		<key>D2D5C5DA-1EAE-4512-B453-DEB6657BA96B</key>
 		<dict>
@@ -352,7 +352,7 @@ By default, translate any language to Russian, setup your language in the **work
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>Keyword that activates the workspace</string>
+			<string>Keyword that activates the workflow</string>
 			<key>label</key>
 			<string>Keyword</string>
 			<key>type</key>
