@@ -1323,7 +1323,7 @@ By default, translate any language to Russian, setup your language in the **work
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>t</string>
+				<string>trns</string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
