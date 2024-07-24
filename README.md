@@ -1,6 +1,6 @@
 # Alfred workflow to translate texts
 ## Usage
-Translate words or sentences to another language via the `t` keyword.
+Translate words or sentences to another language via the `trns` keyword (You can change word in settings).
 ![preview](images/preview.png)
 ![preview2](images/preview2.png)
 ↩: Copy translate to the clipboard.  
