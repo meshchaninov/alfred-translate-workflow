@@ -1342,7 +1342,7 @@ By default, translate any language to Russian, setup your language in the **work
 		</dict>
 	</array>
 	<key>version</key>
-	<string>0.2.0</string>
+	<string>0.2.4</string>
 	<key>webaddress</key>
 	<string>https://nikitadev.dev</string>
 </dict>
