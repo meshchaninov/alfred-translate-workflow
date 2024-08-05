@@ -1,13 +1,11 @@
 #!/usr/bin/python
 
 import json
-import ssl
 from typing import List
 import urllib.parse
 import random
 import http.client
 import sys
-import certifi
 import os
 
 
@@ -184,9 +182,9 @@ class Translate:
             "/singl" + \
             f"e?client=gtx&sl=auto&tl={self.lang}&dt=t&ie=UTF-8&oe=UTF-8&otf=1&ssel=0&tsel=0&kc=7&dt=at&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&q={text_encoded}"
 
-    def _get_request(self, text: str) -> dict:
+    def _get_request(self, text):
         url, path = self._generate_url(text)
-        conn = http.client.HTTPSConnection(url, context=ssl.create_default_context(cafile=certifi.where()))
+        conn = http.client.HTTPSConnection(url)
         headers = {
             "User-Agent": self._get_user_agent(),
         }
