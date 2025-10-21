@@ -2,7 +2,7 @@
 
 ## Usage
 
-Translate words or sentences to another language via the `t` keyword.
+Translate words or sentences to another language via the `translate` keyword.
 ![preview](images/img1.png)
 ![preview2](images/img2.png)
 ![preview3](images/img3.png)
