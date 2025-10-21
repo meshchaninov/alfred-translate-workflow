@@ -1427,7 +1427,7 @@ By default, translate any language to Russian, setup your language in the **work
 			<key>description</key>
 			<string>Select the language into which the text will be translated, if it is written in target language</string>
 			<key>label</key>
-			<string>Input language</string>
+			<string>Secondary language</string>
 			<key>type</key>
 			<string>popupbutton</string>
 			<key>variable</key>
