@@ -10,6 +10,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>4E370A7E-0EC4-43E7-8C76-4FFB946E59CD</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Open in Text View</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>651FC5D3-99B6-45E2-A896-01E2A7D3393C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -23,6 +33,42 @@
 				<string>3FBBE375-C914-4AC3-9A98-31E268F25295</string>
 				<key>modifiers</key>
 				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>Insert translation</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4E370A7E-0EC4-43E7-8C76-4FFB946E59CD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>651FC5D3-99B6-45E2-A896-01E2A7D3393C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3FBBE375-C914-4AC3-9A98-31E268F25295</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>Insert translation</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BEDD2A9C-7DF0-405B-BE9A-07E37AA41FF7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>106F3E8A-2E39-4271-926D-A914AB923F97</string>
+				<key>modifiers</key>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
@@ -56,21 +102,56 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
+				<key>behaviour</key>
+				<integer>0</integer>
+				<key>fontmode</key>
+				<integer>0</integer>
+				<key>fontsizing</key>
+				<integer>0</integer>
+				<key>footertext</key>
+				<string></string>
+				<key>inputfile</key>
+				<string></string>
+				<key>inputtype</key>
+				<integer>0</integer>
+				<key>loadingtext</key>
+				<string></string>
+				<key>outputmode</key>
+				<integer>0</integer>
+				<key>scriptinput</key>
+				<integer>0</integer>
+				<key>spellchecking</key>
+				<integer>0</integer>
+				<key>stackview</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
+			<string>alfred.workflow.userinterface.text</string>
 			<key>uid</key>
-			<string>651FC5D3-99B6-45E2-A896-01E2A7D3393C</string>
+			<string>4E370A7E-0EC4-43E7-8C76-4FFB946E59CD</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Translate</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>BEDD2A9C-7DF0-405B-BE9A-07E37AA41FF7</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -118,6 +199,25 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>106F3E8A-2E39-4271-926D-A914AB923F97</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>651FC5D3-99B6-45E2-A896-01E2A7D3393C</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -172,7 +272,7 @@
 	</array>
 	<key>readme</key>
 	<string># Usage
-Translate words or sentences to another language via the `trns` keyword (You can change word in settings).
+Translate words or sentences to another language via the `t` keyword.
 ![preview](images/preview.png)
 ![preview2](images/preview2.png)
 ↩: Copy translate to the clipboard.
@@ -190,23 +290,37 @@ By default, translate any language to Russian, setup your language in the **work
 		<key>3FBBE375-C914-4AC3-9A98-31E268F25295</key>
 		<dict>
 			<key>xpos</key>
-			<real>550</real>
+			<real>595</real>
 			<key>ypos</key>
-			<real>360</real>
+			<real>425</real>
+		</dict>
+		<key>4E370A7E-0EC4-43E7-8C76-4FFB946E59CD</key>
+		<dict>
+			<key>xpos</key>
+			<real>455</real>
+			<key>ypos</key>
+			<real>50</real>
 		</dict>
 		<key>651FC5D3-99B6-45E2-A896-01E2A7D3393C</key>
 		<dict>
 			<key>xpos</key>
-			<real>520</real>
+			<real>690</real>
 			<key>ypos</key>
-			<real>125</real>
+			<real>220</real>
+		</dict>
+		<key>BEDD2A9C-7DF0-405B-BE9A-07E37AA41FF7</key>
+		<dict>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>115</real>
 		</dict>
 		<key>D2D5C5DA-1EAE-4512-B453-DEB6657BA96B</key>
 		<dict>
 			<key>xpos</key>
-			<real>75</real>
+			<real>80</real>
 			<key>ypos</key>
-			<real>160</real>
+			<real>340</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -1323,7 +1437,7 @@ By default, translate any language to Russian, setup your language in the **work
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>trns</string>
+				<string>t</string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
@@ -1341,9 +1455,11 @@ By default, translate any language to Russian, setup your language in the **work
 			<string>keyword</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>0.2.4</string>
+	<string>1.0.0</string>
 	<key>webaddress</key>
-	<string>https://nikitadev.dev</string>
+	<string>https://nikita.ninja</string>
 </dict>
 </plist>

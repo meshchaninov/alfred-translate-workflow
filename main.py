@@ -194,10 +194,10 @@ class Translate:
             raise RuntimeError(f"HTTP Error: {res.status}")
         return json.loads(res.read())
 
-    def _parse_response(self, data: List) -> List[str]:
-        if data[1] is None:
-            return data[2], [data[0][0][0]]
-        return data[2], data[1][0][1]
+    def _parse_response(self, data: List) -> tuple:
+        translated_text = ''.join([segment[0] for segment in data[0] if segment[0]])
+        detected_lang = data[2] if len(data) > 2 else "unknown"
+        return detected_lang, [translated_text]
 
     def get_translation(self, text: str):
         return self._parse_response(self._get_request(text))
