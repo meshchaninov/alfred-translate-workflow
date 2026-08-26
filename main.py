@@ -180,7 +180,7 @@ class Translate:
             "om", "/tr" + \
             "anslate_a" + \
             "/singl" + \
-            f"e?client=gtx&sl=auto&tl={self.lang}&dt=t&ie=UTF-8&oe=UTF-8&otf=1&ssel=0&tsel=0&kc=7&dt=at&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&q={text_encoded}"
+            f"e?client=dict-chrome-ex&sl=auto&tl={self.lang}&dt=t&ie=UTF-8&oe=UTF-8&otf=1&ssel=0&tsel=0&kc=7&dt=at&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&q={text_encoded}"
 
     def _get_request(self, text):
         url, path = self._generate_url(text)
