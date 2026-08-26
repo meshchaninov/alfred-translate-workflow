@@ -1458,7 +1458,7 @@ By default, translate any language to Russian, setup your language in the **work
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>webaddress</key>
 	<string>https://nikita.ninja</string>
 </dict>
